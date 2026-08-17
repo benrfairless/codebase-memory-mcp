@@ -257,6 +257,9 @@ bash "$ROOT/tests/test_vt_candidate_selection_contract.sh"
 echo "=== Step 0s: release gate-chain ordering contract ==="
 bash "$ROOT/tests/test_release_gate_chain_contract.sh"
 
+echo "=== Step 0t: shell line-ending contract ==="
+bash "$ROOT/tests/test_shell_line_endings.sh"
+
 # Verify compiler supports target arch
 verify_compiler "$CC"
 
